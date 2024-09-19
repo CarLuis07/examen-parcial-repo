@@ -7,7 +7,15 @@ export const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'post-firestore',
     pathMatch: 'full',
+  },
+  {
+    path: 'post-firestore',
+    loadComponent: () => import('./post/post-firestore/post-firestore.page').then( m => m.PostFirestorePage)
+  },
+  {
+    path: 'gallery',
+    loadComponent: () => import('./gallery/pages/gallery/gallery.page').then( m => m.GalleryPage)
   },
 ];
