@@ -7,7 +7,7 @@ export const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'post-firestore',
+    redirectTo: 'gallery',
     pathMatch: 'full',
   },
   {
